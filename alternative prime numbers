@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include <stdbool.h> 
+
+
+bool isPrime(int num) {
+    if (num <= 1) {
+        return false; 
+    }
+    for (int i = 2; i * i <= num; i++) { 
+        if (num % i == 0) {
+            return false; 
+        }
+    }
+    return true; 
+}
+
+int main() {
+    int N;
+    printf("Enter the upper limit (N) to find alternate primes: ");
+    scanf("%d", &N);
+
+    int primeCount = 0; 
+    printf("Alternate prime numbers up to %d are: ", N);
+
+    for (int i = 2; i <= N; i++) {
+        if (isPrime(i)) {
+            if (primeCount % 2 == 0) { 
+                printf("%d ", i);
+            }
+            primeCount++;
+        }
+    }
+    printf("\n");
+    return 0;
+}
