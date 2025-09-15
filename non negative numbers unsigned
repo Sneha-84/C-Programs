@@ -1,0 +1,8 @@
+#include <stdio.h>
+int main()
+{
+   unsigned short int n;
+    scanf("%hu",&n);
+    printf("%hu",n);
+    return 0;
+}
