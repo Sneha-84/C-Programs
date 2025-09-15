@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main()
+{
+   int i, number,Even_sum = 0, Odd_sum = 0;
+   printf("\n Enter The Maximum Limit Value:");
+   scanf("%d",&number);
+   for(i=1; i<=number; i++){
+       if(i%2 == 0)
+       {
+           Even_sum = Even_sum + i;
+       }
+       else
+       {
+           Odd_sum = Odd_sum + i;
+       }
+       printf("\n The Sum of Even Numbers upto %d = %d",number, Even_sum);
+       printf("\n The Sum of odd Numbers upto %d = %d",number, Odd_sum);
+     
+       
+       
+   }
+
+    return 0;
+}
