@@ -1,0 +1,8 @@
+#include<stdio.h>
+int main() {
+    int average, weight1, weight2, weight3;
+    scanf("%d %d %d", &average, &weight1, &weight2, &weight3);
+    weight3 = (3 * average) - weight1 - weight2;
+    printf("%d", weight3);
+    return 0;
+}
