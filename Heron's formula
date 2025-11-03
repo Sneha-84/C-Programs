@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <math.h>
+int main() {
+    int a,b,c;
+    double s;
+    double area;
+    scanf("%d %d %d", &a, &b, &c);
+    s=(double)(a+b+c)/2;
+    if (s > 0 && (s - a) >= 0 && (s - b) >= 0 && (s - c) >= 0) {
+        area = sqrt(s * (s - a) * (s - b) * (s - c));
+    } else {
+        area = 0.0;
+    }
+    printf("%0.4lf", area);
+}
