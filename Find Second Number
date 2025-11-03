@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main(){
+
+    int X;
+    int Y;
+
+    scanf("%d %d",&X,&Y);
+
+    int Z = (2*X) - Y;
+
+    printf ("%d\n",Z);
+
+    return 0;
+}
