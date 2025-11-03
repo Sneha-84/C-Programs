@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+    int x,y,z,r;
+    scanf("%d%d%d",&x,&y,&z);
+    int remaining_capacity = z-y;
+    if (remaining_capacity < 0) {
+        r=0;
+    }else{
+        r=remaining_capacity/x;
+    }
+    printf("%d",r);
+    return 0;
+}
