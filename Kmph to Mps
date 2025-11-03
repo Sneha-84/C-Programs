@@ -1,0 +1,9 @@
+#include<stdio.h>
+int main() {
+    int kmph_speed;
+    float mps_speed;
+    scanf("%d",&kmph_speed);
+    mps_speed = (float)kmph_speed *(5.0/18.0);
+    printf("%.2f", mps_speed);
+    return 0;
+}
