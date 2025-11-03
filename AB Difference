@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main() {
+    int a, b;
+    int correct_sum, vijay_product, difference;
+    scanf("%d %d", &a, &b);
+    correct_sum = a + b;
+    vijay_product = a * b;
+    difference = abs(correct_sum - vijay_product);
+    printf("%d", difference);
+    return 0;
+}
